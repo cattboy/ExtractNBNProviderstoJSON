@@ -1,0 +1,13 @@
+[user]
+    name = cattboy
+    email = cattboy@gmail.com
+
+[core]
+    editor = cursor
+    autocrlf = true  # Use 'true' on Windows
+
+[color]
+    ui = auto
+
+[pull]
+    rebase = true  # Optional: if you prefer rebasing on pull
