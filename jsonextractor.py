@@ -64,9 +64,9 @@ class NBNProviderScraper:
             oldest_file = os.path.join(log_dir, log_files[0])
             try:
                 os.remove(oldest_file)
-                print(f"Removed oldest log file: {oldest_file}")
+                print(f"\n \n Removed oldest log file: {oldest_file}")
             except OSError as e:
-                print(f"Error removing old log file: {e}")
+                print(f"\n \n Error removing old log file: {e}")
         
         # Setup logging with file output
         logging.basicConfig(
@@ -151,22 +151,55 @@ class NBNProviderScraper:
     def save_to_json(self, filename: str = 'nbn_providers.json') -> None:
         """Save the extracted data to a JSON file"""
         try:
-            # Create OUTPUT directory if it doesn't exist
+            # Create OUTPUT and OUTPUTHistory directories if they don't exist
             output_dir = os.path.join(os.getcwd(), 'OUTPUT')
             os.makedirs(output_dir, exist_ok=True)
+            history_dir = os.path.join(os.getcwd(), 'OUTPUT\OUTPUT_History')
+            os.makedirs(history_dir, exist_ok=True)
             
             # Add datetime stamp to filename
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
             base_name, ext = os.path.splitext(filename)
             filename_with_timestamp = f"{base_name}_{timestamp}{ext}"
-            
-            # Combine path and filename
             full_path = os.path.join(output_dir, filename_with_timestamp)
             
+            # Generate the new JSON content
+            new_content = json.dumps(self.providers, indent=2, ensure_ascii=False)
+            
+            # Check for existing files in OUTPUT directory
+            existing_files = [f for f in os.listdir(output_dir) if f.startswith(base_name) and f.endswith(ext)]
+            if existing_files:
+                latest_file = max(existing_files, key=lambda x: os.path.getctime(os.path.join(output_dir, x)))
+                latest_file_path = os.path.join(output_dir, latest_file)
+                
+                # Compare content with latest file
+                with open(latest_file_path, 'r', encoding='utf-8') as f:
+                    existing_content = f.read()
+                
+                if existing_content == new_content:
+                    self.logger.info("No changes detected in content. Skipping save operation.")
+                    return
+                
+                # Move existing file to history
+                history_path = os.path.join(history_dir, latest_file)
+                os.rename(latest_file_path, history_path)
+                self.logger.info(f"Moved previous file to history: {latest_file}")
+                
+                # Check and manage history files
+                history_files = [f for f in os.listdir(history_dir) 
+                               if f.startswith(base_name) and f.endswith(ext)]
+                if len(history_files) > 5:
+                    oldest_file = min(history_files, 
+                                    key=lambda x: os.path.getctime(os.path.join(history_dir, x)))
+                    os.remove(os.path.join(history_dir, oldest_file))
+                    self.logger.info(f"Removed oldest history file: {oldest_file}")
+            
+            # Save new file
             with open(full_path, 'w', encoding='utf-8') as f:
-                json.dump(self.providers, f, indent=2, ensure_ascii=False)
+                f.write(new_content)
             self.logger.info(f"Successfully extracted {len(self.providers)} providers")
             self.logger.info(f"Successfully saved providers to {full_path}")
+            
         except IOError as e:
             self.logger.error(f"Failed to save JSON file: {e}")
             raise
@@ -186,7 +219,7 @@ def main():
     scraper = NBNProviderScraper()
     try:
         providers = scraper.run()
-        print(f"Successfully extracted {len(providers)} providers")
+        print(f"Successfully found {len(providers)} providers")
 
     except Exception as e:
         print(f"Error: {e}")

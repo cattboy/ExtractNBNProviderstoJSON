@@ -1,0 +1,163 @@
+2025-02-03 17:54:05,302 - INFO - Selenium WebDriver initialized successfully
+2025-02-03 17:54:05,304 - INFO - Navigating to https://www.nbnco.com.au/residential/service-providers
+2025-02-03 17:54:14,447 - INFO - Found provider: 10Mates
+2025-02-03 17:54:14,448 - INFO - Found provider: 1300EasyISP
+2025-02-03 17:54:14,448 - INFO - Found provider: 2it Technology
+2025-02-03 17:54:14,449 - INFO - Found provider: Accord with Officeworks
+2025-02-03 17:54:14,449 - INFO - Found provider: Ace Internet
+2025-02-03 17:54:14,449 - INFO - Found provider: Activ8me
+2025-02-03 17:54:14,450 - INFO - Found provider: Adam Internet
+2025-02-03 17:54:14,450 - INFO - Found provider: ADOP Communications
+2025-02-03 17:54:14,451 - INFO - Found provider: Advantage Communication & Data
+2025-02-03 17:54:14,451 - INFO - Found provider: AGL Telecommunications
+2025-02-03 17:54:14,451 - INFO - Found provider: Airtel
+2025-02-03 17:54:14,452 - INFO - Found provider: Alpha Dot Net
+2025-02-03 17:54:14,452 - INFO - Found provider: AlphaCall
+2025-02-03 17:54:14,452 - INFO - Found provider: ANT
+2025-02-03 17:54:14,453 - INFO - Found provider: Aqua Mobile
+2025-02-03 17:54:14,453 - INFO - Found provider: ASB Communications
+2025-02-03 17:54:14,453 - INFO - Found provider: Ascensa Communications
+2025-02-03 17:54:14,454 - INFO - Found provider: AUS Internet
+2025-02-03 17:54:14,454 - INFO - Found provider: AusBBS
+2025-02-03 17:54:14,454 - INFO - Found provider: Aussie Broadband
+2025-02-03 17:54:14,454 - INFO - Found provider: Aussie Web & IT Solutions
+2025-02-03 17:54:14,455 - INFO - Found provider: Australia Broadband
+2025-02-03 17:54:14,456 - INFO - Found provider: Australia Online
+2025-02-03 17:54:14,456 - INFO - Found provider: Barefoot Telecom
+2025-02-03 17:54:14,456 - INFO - Found provider: Beagle Internet
+2025-02-03 17:54:14,457 - INFO - Found provider: Belong
+2025-02-03 17:54:14,457 - INFO - Found provider: Bendigo Telco
+2025-02-03 17:54:14,458 - INFO - Found provider: Best Telecom Australia
+2025-02-03 17:54:14,458 - INFO - Found provider: Boom Broadband
+2025-02-03 17:54:14,458 - INFO - Found provider: Boost Broadband
+2025-02-03 17:54:14,458 - INFO - Found provider: Broadband Solutions
+2025-02-03 17:54:14,460 - INFO - Found provider: Buddy Telco
+2025-02-03 17:54:14,460 - INFO - Found provider: Buroserv
+2025-02-03 17:54:14,461 - INFO - Found provider: Business Technology Centre
+2025-02-03 17:54:14,461 - INFO - Found provider: Bvivid
+2025-02-03 17:54:14,462 - INFO - Found provider: Candour Communications
+2025-02-03 17:54:14,462 - INFO - Found provider: Carbon Comms
+2025-02-03 17:54:14,462 - INFO - Found provider: Centel Communications
+2025-02-03 17:54:14,462 - INFO - Found provider: Central Coast Internet
+2025-02-03 17:54:14,462 - INFO - Found provider: Clear Networks
+2025-02-03 17:54:14,462 - INFO - Found provider: Click Access
+2025-02-03 17:54:14,464 - INFO - Found provider: Click Access
+2025-02-03 17:54:14,464 - INFO - Found provider: Cmobile
+2025-02-03 17:54:14,464 - INFO - Found provider: Connected Australia
+2025-02-03 17:54:14,464 - INFO - Found provider: Countrytell
+2025-02-03 17:54:14,465 - INFO - Found provider: Cybertel Telecom
+2025-02-03 17:54:14,466 - INFO - Found provider: Datalife
+2025-02-03 17:54:14,466 - INFO - Found provider: DataWave
+2025-02-03 17:54:14,466 - INFO - Found provider: Dodo
+2025-02-03 17:54:14,467 - INFO - Found provider: Downstream
+2025-02-03 17:54:14,467 - INFO - Found provider: Easynet
+2025-02-03 17:54:14,468 - INFO - Found provider: ECN
+2025-02-03 17:54:14,468 - INFO - Found provider: EHW Technology
+2025-02-03 17:54:14,468 - INFO - Found provider: EscapeNet
+2025-02-03 17:54:14,469 - INFO - Found provider: Exetel
+2025-02-03 17:54:14,469 - INFO - Found provider: FairTel
+2025-02-03 17:54:14,469 - INFO - Found provider: Fantel
+2025-02-03 17:54:14,469 - INFO - Found provider: FibreMax
+2025-02-03 17:54:14,469 - INFO - Found provider: Flip
+2025-02-03 17:54:14,470 - INFO - Found provider: Foxtel
+2025-02-03 17:54:14,470 - INFO - Found provider: Frankston Internet
+2025-02-03 17:54:14,470 - INFO - Found provider: Future Broadband
+2025-02-03 17:54:14,472 - INFO - Found provider: FuzeNet
+2025-02-03 17:54:14,472 - INFO - Found provider: GenNext
+2025-02-03 17:54:14,472 - INFO - Found provider: Gippsland Broadband
+2025-02-03 17:54:14,473 - INFO - Found provider: GoInternet
+2025-02-03 17:54:14,473 - INFO - Found provider: Goodtel
+2025-02-03 17:54:14,473 - INFO - Found provider: Green Tree Frog
+2025-02-03 17:54:14,474 - INFO - Found provider: Harbour ISP
+2025-02-03 17:54:14,474 - INFO - Found provider: Hello Broadband
+2025-02-03 17:54:14,474 - INFO - Found provider: i.net.au
+2025-02-03 17:54:14,475 - INFO - Found provider: If Telecom
+2025-02-03 17:54:14,475 - INFO - Found provider: IIG
+2025-02-03 17:54:14,475 - INFO - Found provider: iiNet
+2025-02-03 17:54:14,475 - INFO - Found provider: infiNET Broadband
+2025-02-03 17:54:14,475 - INFO - Found provider: Inspired Broadband
+2025-02-03 17:54:14,475 - INFO - Found provider: International Exchange
+2025-02-03 17:54:14,476 - INFO - Found provider: Interphone
+2025-02-03 17:54:14,476 - INFO - Found provider: iPrimus
+2025-02-03 17:54:14,476 - INFO - Found provider: IPStar
+2025-02-03 17:54:14,477 - INFO - Found provider: JUSTISP
+2025-02-03 17:54:14,478 - INFO - Found provider: Key Internet
+2025-02-03 17:54:14,480 - INFO - Found provider: Kinetix
+2025-02-03 17:54:14,480 - INFO - Found provider: KloudPhone
+2025-02-03 17:54:14,480 - INFO - Found provider: Kogan
+2025-02-03 17:54:14,480 - INFO - Found provider: Launtel
+2025-02-03 17:54:14,480 - INFO - Found provider: Leaptel
+2025-02-03 17:54:14,482 - INFO - Found provider: Lemonade Broadband
+2025-02-03 17:54:14,482 - INFO - Found provider: Lightning IP
+2025-02-03 17:54:14,483 - INFO - Found provider: Linear G
+2025-02-03 17:54:14,483 - INFO - Found provider: Lizzy Internet
+2025-02-03 17:54:14,484 - INFO - Found provider: Mad Over Tech
+2025-02-03 17:54:14,484 - INFO - Found provider: Mate
+2025-02-03 17:54:14,485 - INFO - Found provider: Matilda
+2025-02-03 17:54:14,485 - INFO - Found provider: Melbourne Phone Company Pty Ltd
+2025-02-03 17:54:14,485 - INFO - Found provider: Mid North Coast Internet
+2025-02-03 17:54:14,485 - INFO - Found provider: Mint Telecom
+2025-02-03 17:54:14,485 - INFO - Found provider: Montimedia Internet
+2025-02-03 17:54:14,486 - INFO - Found provider: Moose Mobile
+2025-02-03 17:54:14,487 - INFO - Found provider: more
+2025-02-03 17:54:14,487 - INFO - Found provider: MOVOX
+2025-02-03 17:54:14,487 - INFO - Found provider: My Telco Mate
+2025-02-03 17:54:14,488 - INFO - Found provider: MyNetFone
+2025-02-03 17:54:14,488 - INFO - Found provider: MyOwn Tel
+2025-02-03 17:54:14,488 - INFO - Found provider: Nelson Bay Online
+2025-02-03 17:54:14,489 - INFO - Found provider: New Sprout
+2025-02-03 17:54:14,489 - INFO - Found provider: Nexon
+2025-02-03 17:54:14,489 - INFO - Found provider: Next Business Telecom
+2025-02-03 17:54:14,490 - INFO - Found provider: NodeOne
+2025-02-03 17:54:14,490 - INFO - Found provider: Nornet
+2025-02-03 17:54:14,491 - INFO - Found provider: OCCOM
+2025-02-03 17:54:14,491 - INFO - Found provider: OceanDigi
+2025-02-03 17:54:14,491 - INFO - Found provider: OntheNet
+2025-02-03 17:54:14,491 - INFO - Found provider: Optus
+2025-02-03 17:54:14,491 - INFO - Found provider: Origin Broadband
+2025-02-03 17:54:14,491 - INFO - Found provider: Pear
+2025-02-03 17:54:14,492 - INFO - Found provider: Pentanet
+2025-02-03 17:54:14,493 - INFO - Found provider: Powercom Pacific
+2025-02-03 17:54:14,493 - INFO - Found provider: Prime Telecom
+2025-02-03 17:54:14,493 - INFO - Found provider: Pronto Broadband
+2025-02-03 17:54:14,493 - INFO - Found provider: Qured
+2025-02-03 17:54:14,493 - INFO - Found provider: Real World Technology Solutions
+2025-02-03 17:54:14,495 - INFO - Found provider: Roctel
+2025-02-03 17:54:14,495 - INFO - Found provider: SkyMesh
+2025-02-03 17:54:14,495 - INFO - Found provider: Solitary Technology
+2025-02-03 17:54:14,495 - INFO - Found provider: Southern Phone
+2025-02-03 17:54:14,497 - INFO - Found provider: Spintel
+2025-02-03 17:54:14,497 - INFO - Found provider: Start Broadband
+2025-02-03 17:54:14,497 - INFO - Found provider: Steele Technology
+2025-02-03 17:54:14,498 - INFO - Found provider: Sumo
+2025-02-03 17:54:14,498 - INFO - Found provider: Superloop
+2025-02-03 17:54:14,498 - INFO - Found provider: Switched On Australia
+2025-02-03 17:54:14,499 - INFO - Found provider: Swoop Broadband
+2025-02-03 17:54:14,499 - INFO - Found provider: Tablelands Communications
+2025-02-03 17:54:14,500 - INFO - Found provider: Tangerine Telecom
+2025-02-03 17:54:14,500 - INFO - Found provider: TasmaNet
+2025-02-03 17:54:14,500 - INFO - Found provider: Telair
+2025-02-03 17:54:14,501 - INFO - Found provider: Telstra
+2025-02-03 17:54:14,501 - INFO - Found provider: The George Baini Group
+2025-02-03 17:54:14,501 - INFO - Found provider: The Internet Provider
+2025-02-03 17:54:14,502 - INFO - Found provider: TIG Telecom
+2025-02-03 17:54:14,502 - INFO - Found provider: Tomi
+2025-02-03 17:54:14,502 - INFO - Found provider: TPG
+2025-02-03 17:54:14,502 - INFO - Found provider: Trikon
+2025-02-03 17:54:14,503 - INFO - Found provider: TrueTelco
+2025-02-03 17:54:14,503 - INFO - Found provider: Uniqaus
+2025-02-03 17:54:14,504 - INFO - Found provider: URL Networks
+2025-02-03 17:54:14,504 - INFO - Found provider: Utelecom Australia Pty Ltd
+2025-02-03 17:54:14,504 - INFO - Found provider: Veetel
+2025-02-03 17:54:14,505 - INFO - Found provider: Vocal
+2025-02-03 17:54:14,505 - INFO - Found provider: Vodafone
+2025-02-03 17:54:14,505 - INFO - Found provider: VoIPex
+2025-02-03 17:54:14,506 - INFO - Found provider: Vonex Telecom
+2025-02-03 17:54:14,506 - INFO - Found provider: Wired & Wireless
+2025-02-03 17:54:14,506 - INFO - Found provider: X Integration
+2025-02-03 17:54:14,507 - INFO - Found provider: Yourhub
+2025-02-03 17:54:14,507 - INFO - Found provider: ZettaNet
+2025-02-03 17:54:14,510 - INFO - Moved previous file to history: nbn_providers_20250203_175059.json
+2025-02-03 17:54:14,510 - INFO - Removed oldest history file: nbn_providers_20250203_174940.json
+2025-02-03 17:54:14,512 - INFO - Successfully extracted 157 providers
+2025-02-03 17:54:14,512 - INFO - Successfully saved providers to C:\Users\Cursor_VBOX\Documents\1_Working_On\OUTPUT\nbn_providers_20250203_175414.json
