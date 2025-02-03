@@ -10,10 +10,21 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 import time
+import os
+from datetime import datetime
 
 class NBNProviderScraper:
-    def __init__(self, url: str = "https://www.nbnco.com.au/residential/service-providers"):
-        self.url = url
+    # Hardcode url
+    #  def __init__(self, url: str = "https://www.nbnco.com.au/residential/service-providers"):
+    #     self.url = url
+    def __init__(self, url_file: str = "NBN_RSP_URL.txt"):
+        # Read URL from file
+        try:
+            with open(url_file, 'r') as f:
+                self.url = f.read().strip()
+        except IOError as e:
+            raise IOError(f"Failed to read URL from file {url_file}: {e}")
+            
         self.providers: List[Dict[str, str]] = []
         self.setup_logging()
         self.setup_selenium()
@@ -34,9 +45,37 @@ class NBNProviderScraper:
 
     def setup_logging(self) -> None:
         """Configure logging for the scraper"""
+        # Create Logs directory if it doesn't exist
+        log_dir = os.path.join(os.getcwd(), 'Logs')
+        os.makedirs(log_dir, exist_ok=True)
+        
+        # Add datetime stamp to log filename
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        log_filename = f'ExtractNBNProviderstoJSON_{timestamp}.log'
+        log_file = os.path.join(log_dir, log_filename)
+        
+        # Check and manage log files
+        log_files = [f for f in os.listdir(log_dir) 
+                    if f.startswith('ExtractNBNProviderstoJSON_') and f.endswith('.log')]
+        
+        if len(log_files) >= 5:
+            # Sort files by creation time and remove the oldest
+            log_files.sort(key=lambda x: os.path.getctime(os.path.join(log_dir, x)))
+            oldest_file = os.path.join(log_dir, log_files[0])
+            try:
+                os.remove(oldest_file)
+                print(f"Removed oldest log file: {oldest_file}")
+            except OSError as e:
+                print(f"Error removing old log file: {e}")
+        
+        # Setup logging with file output
         logging.basicConfig(
             level=logging.INFO,
-            format='%(asctime)s - %(levelname)s - %(message)s'
+            format='%(asctime)s - %(levelname)s - %(message)s',
+            handlers=[
+                logging.FileHandler(log_file),
+                logging.StreamHandler()
+            ]
         )
         self.logger = logging.getLogger(__name__)
 
@@ -112,9 +151,22 @@ class NBNProviderScraper:
     def save_to_json(self, filename: str = 'nbn_providers.json') -> None:
         """Save the extracted data to a JSON file"""
         try:
-            with open(filename, 'w', encoding='utf-8') as f:
+            # Create OUTPUT directory if it doesn't exist
+            output_dir = os.path.join(os.getcwd(), 'OUTPUT')
+            os.makedirs(output_dir, exist_ok=True)
+            
+            # Add datetime stamp to filename
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            base_name, ext = os.path.splitext(filename)
+            filename_with_timestamp = f"{base_name}_{timestamp}{ext}"
+            
+            # Combine path and filename
+            full_path = os.path.join(output_dir, filename_with_timestamp)
+            
+            with open(full_path, 'w', encoding='utf-8') as f:
                 json.dump(self.providers, f, indent=2, ensure_ascii=False)
-            self.logger.info(f"Successfully saved providers to {filename}")
+            self.logger.info(f"Successfully extracted {len(self.providers)} providers")
+            self.logger.info(f"Successfully saved providers to {full_path}")
         except IOError as e:
             self.logger.error(f"Failed to save JSON file: {e}")
             raise
@@ -135,6 +187,7 @@ def main():
     try:
         providers = scraper.run()
         print(f"Successfully extracted {len(providers)} providers")
+
     except Exception as e:
         print(f"Error: {e}")
 
